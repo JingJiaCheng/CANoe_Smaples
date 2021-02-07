@@ -1,0 +1,96 @@
+/*@!Encoding:936*/
+
+/*osek nm parameters configuration*/
+
+/*NM网段*/
+const byte NM_BASE = 0x400;
+
+/*仪表节点地址*/
+const byte IC_ADDR = 0x30;
+
+/*bus off快恢复最小值/标称值/最大值(ms)*/
+const byte TBusOffQuick_MIN = 45;
+const byte TBusOffQuick_STD = 50;
+const byte TBusOffQuick_MAX = 70;
+
+/*bus off慢恢复最小值/标称值/最大值(ms)*/
+const byte TBusOffSlow_MIN = 180;
+const byte TBusOffSlow_STD = 200;
+const byte TBusOffSlow_MAX = 220;
+
+/*记录故障DTC连续Bus-off的次数*/
+const byte NBusOffCount_STD = 8;
+
+/*Alive*/
+const byte NM_ALIVE = 0x01;
+/*Ring*/
+const byte NM_RING = 0x02;
+/*Limphome*/
+const byte NM_LIMPHOME = 0x04;
+/*Sleep indication*/
+const byte NM_SI = 0x10;
+/*Sleep Acknowledge*/
+const byte NM_SA = 0x30;
+
+/*Ignition on*/
+const byte IGN_ON = TURE;
+/*Ignition off*/
+const byte IGN_OFF = FALSE;
+
+/*tType (ms)*/
+const byte TTYpe_MIN = 70;
+const byte TTYpe_STD = 100;
+const byte TTYpe_MAX = 110;
+
+/*tMax (ms)*/
+const byte TMax_MIN = 220;
+const byte TMax_STD = 260;
+const byte TMax_MAX = 284;
+
+/*tError (ms)*/
+const byte TError_MIN = 950;
+const byte TError_STD = 1000;
+const byte TError_MAX = 1100;
+
+/*tWBS (ms)*/
+const byte TWBS_MIN = 4000;
+const byte TWBS_STD = 5000;
+const byte TWBS_MAX = 6000;
+
+/*系统上电后发送第一条应用报文的时间(最小值/标称值/最大值)(ms)*/
+const byte TCANInit_MIN = 200;
+const byte TCANInit_STD = 200;
+const byte TCANInit_MAX = 200;
+
+/*系统上电后发送第一条Alive报文的时间(最小值/标称值/最大值)(ms)*/
+const byte TWakeup_IGON_MIN = 100;
+const byte TWakeup_IGON_STD = 100;
+const byte TWakeup_IGON_MAX = 100;
+
+/*远程唤醒后发送第一条Alive报文的时间(最小值/标称值/最大值)(ms)*/
+const byte TWakeup_Remote_MIN = 50;
+const byte TWakeup_Remote_STD = 50;
+const byte TWakeup_Remote_MAX = 50;
+
+/*第一帧 Alive 报文发送后 发送应用报文的间隔时间(最小值/标称值/最大值)(ms)*/
+const byte TApplActive_MIN = 60;
+const byte TApplActive_STD = 90;
+const byte TApplActive_MAX = 120;
+
+/*进入NMNormal状态后请求睡眠的最短时间(最小值/标称值/最大值)(ms)*/
+const byte TSleepRequestMin_N_MIN = 4000;
+const byte TSleepRequestMin_N_STD = 5000;
+const byte TSleepRequestMin_N_MAX = 5000;
+
+/*进入NMLimpHome状态后请求睡眠的最短时间(最小值/标称值/最大值)(ms)*/
+const byte TSleepRequestMin_L_MIN = 4000;
+const byte TSleepRequestMin_L_STD = 5000;
+const byte TSleepRequestMin_L_MAX = 5000;
+
+/*进入NMLimpHome状态后存储 LimpHomeDTC 的延时时间(最小值/标称值/最大值)(ms)*/
+const byte TLimpHomeDTC_MIN = 2000;
+const byte TLimpHomeDTC_STD = 2000;
+const byte TLimpHomeDTC_MAX = 3500;
+
+
+
